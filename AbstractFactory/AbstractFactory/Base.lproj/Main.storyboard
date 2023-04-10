@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AbstractFactory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="nM3-oH-RuQ">
+                                <rect key="frame" x="75" y="159.00000000000003" width="243" height="428.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="fyT-zM-hN7">
+                                        <rect key="frame" x="0.0" y="0.0" width="243" height="198.33333333333334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown-1" translatesAutoresizingMaskIntoConstraints="NO" id="aVc-fH-BqU">
+                                                <rect key="frame" x="0.0" y="0.0" width="243" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="jkb-tp-whw"/>
+                                                    <constraint firstAttribute="width" constant="243" id="lVS-qm-Hub"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yg-aE-e7I">
+                                                <rect key="frame" x="0.0" y="164" width="243" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Order kitchen furnutures"/>
+                                                <connections>
+                                                    <action selector="kitchenOrderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4YN-zI-Jee"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="E2s-81-rY5">
+                                        <rect key="frame" x="0.0" y="230.33333333333331" width="243" height="198.33333333333331"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown-2" translatesAutoresizingMaskIntoConstraints="NO" id="cFO-On-4Mm">
+                                                <rect key="frame" x="0.0" y="0.0" width="243" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="7n1-Pb-GX0"/>
+                                                    <constraint firstAttribute="width" constant="243" id="9re-OI-T1x"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zui-yJ-n9g">
+                                                <rect key="frame" x="0.0" y="164.00000000000006" width="243" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Orderbedroom furnutures"/>
+                                                <connections>
+                                                    <action selector="bedroomOrderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nM2-I0-SIa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nM3-oH-RuQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Syg-Zd-p8u"/>
+                            <constraint firstItem="nM3-oH-RuQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y9h-ws-1Bz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38.931297709923662" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Unknown-1" width="180" height="135"/>
+        <image name="Unknown-2" width="183" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
